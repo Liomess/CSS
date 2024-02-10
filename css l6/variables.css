@@ -1,0 +1,27 @@
+:root{
+    --dark_blue: #6a15f3;
+}
+/* global decleration */
+
+.container{
+    border:1px solid brown;
+    background-color: green;
+    height:300px;
+    width:300px;
+    background-color: var(--dark_blue);
+}
+
+
+.box{
+    border:2px solid green;
+    background-color: aqua;
+    --dark_red: #981a2c;
+    /* local decleration */
+    color: var(--dark_red);
+}
+
+/* here dark_red is a local variable and has its scope only in .box{} */
+/* whereas dark_blue is a global variable and has its scope globally */
+
+/* to declare a variable "--" symbol is used */
+/* and var() function is used to access that variable  */

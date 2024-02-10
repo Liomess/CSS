@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* flexbox is used  for the allignment of the content and is implemented over one dimension at a time. */
+/* css grid is used for the overall layout and is implemented over two dimensions. */
+
+.container{
+    height: 500px;
+    background-color: brown;
+    border: 3px solid black;
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: 100px repeat(2,1fr) 100px; */
+    grid-template-columns: repeat(3,1fr);
+
+    /* grid-template-rows: 90px 90px 90px; */
+    grid-template-rows: repeat(4,1fr);
+
+    gap: 15px;
+}
+/* in grid this gap is known as gutter. */
+/* 1fr is a unit which divides the grid equally wrt fraction and this unit makes our grid responsive. */
+
+
+.box{
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

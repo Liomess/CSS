@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* large screen */
+.container{
+    height: 500px;
+    width: 804px;
+
+    border: 1px solid black;
+    background-color: yellow;
+
+    display: grid;
+    gap: 4px;
+
+    grid-template-columns: 100px 400px;
+    grid-template-rows: 30px 1fr 30px;
+
+    grid-template-areas: 
+    "hd hd"
+    "sd main"
+    "ft ft";
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+#header{
+    grid-area: hd;
+}
+
+#footer{
+    grid-area: ft;
+}
+
+#side{
+    grid-area: sd;
+}
+
+#main{
+    grid-area: main;
+}
+
+/* @media (max-width:400px) {
+    .container{
+        grid-gap:100px;
+    }
+} */
+
+/* medium screen */
+@media(max-width:500px) and (min-width:351px){
+    .container{
+        grid-template-rows: 30px 1fr 30px;
+        grid-template-columns: 1fr 1fr;
+
+        grid-gap: 4px;
+
+        grid-template-areas:
+        "hd hd"
+        "sd main"
+        "ft main";
+    }
+    
+}
+
+/* small screen */
+@media(max-width:350px){
+    .container {
+        grid-template-rows: 30px 1fr 1fr 30px;
+        grid-template-columns: 1fr;
+
+        grid-gap: 2px;
+
+        grid-template-areas:
+        "hd"
+        "sd"
+        "main"
+        "ft";
+    }
+}
+
+
+/* example 2 */
+.con{
+    height: 500px;
+    width: 804px;
+
+    border: 1px solid black;
+    background-color: yellow;
+
+    display: grid;
+    gap: 4px;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.child{
+    height: 100%;
+    width: 100%;
+
+    border: 1px solid black;
+    background-color: yellow;
+
+    display: grid;
+    gap: 4px;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.element{
+    border: 1px solid green;
+    background-color: blueviolet;
+}

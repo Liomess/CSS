@@ -1,0 +1,86 @@
+.container{
+    height: 400px;
+    border: 2px solid green;
+
+
+    display: flex;
+
+
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+
+
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    flex-flow: row wrap;
+
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+
+
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    align-items: baseline;
+
+
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+
+}
+
+/* [display: flex] is used to add the functionalities of a flexbox to any element. */
+
+/* [flex-wrap : wrap] is used to hard core the width of any element on squezzing. */
+
+/* [flex flow] is a short hand notation for flex direction and flex wrap. */
+
+/* [justify-content] attribute aligns the element along the main axis(horizontal axis). */
+/* [align-items] attribute aligns the element along the cross axis(vertical axis). */
+/* [align-content] attribute aligns the element along the spaces between each other. */
+
+
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+}
+
+#box1{
+    order: 5;
+    flex-grow: 2;
+    flex-shrink: 8;
+}
+#box2{
+    order: 8;
+    align-self: stretch;
+}
+#box3{
+    order: 7;
+    flex-grow: 1;
+}
+#box4{
+    flex-basis: 100px;
+    align-self: flex-start;
+}
+/* [flex-basis] attribute just provides the width to the element and also makes it responsive. */
+/* order by default value is 0 */
+/* flex-grow by default value is 0 */
+/* flex-shrink by default value is 1 */

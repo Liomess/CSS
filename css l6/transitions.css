@@ -1,0 +1,50 @@
+.container {
+    height:600px;
+    width:600px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+
+
+.box{
+    height:150px;
+    width:150px;
+    margin:20px;
+    border:2px solid orange;
+    background-color: aqua;
+
+    /* transition: background-color 2s ease 1s; */
+
+    /* transition: all 2s ease 1s; */
+
+    transition: 2s ease-in 1s;
+
+}
+/* transition: (transition property) (transition duration) (transition timing funtion) (transition delay) */
+
+/* but writing 'all' is not a good practice so to include transitions on more than one properties
+    either leave it blank or write seperately */
+
+.box:hover{
+    background-color: brown;
+    transform: rotate(45deg);
+}
+
+.pen{
+    height:150px;
+    width:150px;
+    margin:20px;
+    border:2px solid orange;
+    background-color: aqua;
+
+    /* transition: 2s ease-out 1s; */
+
+    transition: 2s cubic-bezier(0.13, 0.7, 0.68, 0.19) 1s;
+}
+/* cubic-bezier() funtion allows me to make my own timing function  */
+
+.pen:hover{
+    background-color: blueviolet;
+    transform:  translateX(500px) rotate(360deg);
+}

@@ -1,0 +1,43 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.box{
+    margin: 50px;
+    transform: translate(200px,50px);
+    transform: translateY(50px);
+    transform: translateX(250px);
+
+    transform: rotate(45deg);
+    transform: rotate(-45deg);
+
+    transform: scale(1,2);
+
+    transform: skew(45deg,20deg);
+}
+
+
+/* translate attribute moves the element anywhere in the x-y axis. */
+
+/* rotate attribute rotates the element anywhere in the x-y axis. */
+
+/* scale attribute zooms in/out the element anywhere in the x-y axis. */
+
+/* skew attribute tilts the element anywhere in the x-y axis. */
+
+
+
+
+.translated{
+    transform: perspective(15px) translateZ(-5px);
+}
+
+.scaled{
+    transform: perspective(15px) scaleZ(0.5) rotateX(5deg) rotateY(10deg) translateX(50px);
+}
+
+
+/* in order to transform element in z axis , we hve to turn on the perspective attribute. */

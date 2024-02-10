@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1{
+            background-color: red;
+            width: 500px;
+            height: 100px;
+        }
+        #div2{
+            background-color: aqua;
+            width: 10%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hexadecimal colors:
+    1. RGB colors - red, green ,blue
+    2. syntax- #_ _ _ _ _ _  (each can contain values from 0 to F)
+    3. red- # F F 0 0 0 0 
+    4. green- # 0 0 F F 0 0 
+    5. blue- # 0 0 0 0 F F 
+    6. black- # 0 0 0 0 0 0
+    7. white- # F F F F F F  -->
+
+    <!-- RGB function:
+    1. rgb(_ , _ , _)  (each can contain values from 0to 255)
+    2. red- rgb(255 , 0 , 0) 
+    3. green- rgb(0 , 255 , 0) 
+    4. blue- rgb(0 , 0 , 255) 
+    5. black- rgb(0 , 0 , 0)
+    6. white- rgb(255 , 255 , 255) -->
+    
+    
+
+    <!-- predefined colors: 140 colors -->
+
+    <p style="color: #838065;">this is first para</p>
+
+    <p style="color: rgb(145, 167, 21);">this is second para</p>
+
+    <!-- Pixel unit:
+    # px  = smallest unit of size in css.
+    # ( 1 px = 1/96 inch) 
+    # The value of px is fixed for all interfaces. 
+    # The concept of hardware pixel is totally differnt from css pixel.  -->
+
+    <!-- Percentage unit:
+    # calculates the dimension of an element on the basis of the dimension of its parent element
+      based on the Percentage provided.  -->
+
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+
+    <!-- Relative unit to font size:
+    1. em(relative to parent's font size):-
+    # 1 em = 1* font size of parent
+    # 2 em = 2* font size of parent
+
+    2. rem(relative to root):-
+    # 1 rem = 1* font size of parent (html element)
+    # 2 em = 2* font size of parent (html element) -->
+
+    <!-- Relative unit to viewport:
+    1. vw  =  1/100 * width of viewport
+    2. vh  =  1/100 * height of viewport -->
+</body>
+</html>

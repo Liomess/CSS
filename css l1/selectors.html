@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!--element or tag selector-->
+    <style>
+        p {                              
+            color: blue;
+            font-size: larger;
+        }
+    </style> 
+
+    <!--class selector-->
+    <style>
+        .p1{
+            color: green;
+        }
+
+        .p2{
+            color: blueviolet;
+        }
+    </style>
+
+    <!-- for commenting use (ctrl+/) -->
+
+
+    <!-- id selector -->
+    <style>
+        #a1{
+            color: red;
+        }
+        #a2{
+            color: pink;
+        }
+        #a3{
+            color: blue;
+        }
+    </style>
+
+
+    <!-- pseudo class selector -->
+    <!-- when we want differnt style in a different state of an element -->
+    <style>
+        button{
+            color: blue;
+        }
+        button:hover{
+            color: red;
+        }
+    </style>
+
+    <!-- multiple selectors -->
+    <style>
+        table,tr,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>this is first paragraph</p>
+    <p>this is second para</p>
+    <p>this id third para</p>
+
+    <p class="p1">this is first paragraph</p>
+    <p class="p1">this is second para</p>
+    <p class="p2">this id third para</p>
+
+    <p id="a1">this is first paragraph</p>
+    <p id="a2">this is second para</p>
+    <p id="a3">this id third para</p>
+
+    <button>submit</button>
+    <br>
+
+    <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table>
+
+
+    <!-- universal selector- *{} [applies to each and every element]-->
+</body>
+</html>
